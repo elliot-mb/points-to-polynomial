@@ -9,7 +9,8 @@ For any array of m + 1 distinct points with no common x coordinates
 [ ...  ...  ...  ...  ...  ...     ... ]
 [ 1    xm   xm^2 xm^3 ...  xm^m-1  ym  ]
 ```
-...which is then solved for the coefficients of ``x^0 (1), x^1, x^2, ...`` \To get a polynomial from these coefficients ``c0, c1, c2, ...``, write:
+...which is then solved for the coefficients of ``x^0 (1), x^1, x^2, ...`` \
+To get a polynomial from these coefficients (``c0, c1, c2, ...``), write:
 ```
 c0 * 1 + c1 * x + c2 * x^2 + c3 * x^3 + ... + cm-1 * x^m-1 = y
 ```
