@@ -14,7 +14,7 @@ To get a polynomial from these coefficients (``c0, c1, c2, ...``), write:
 ```
 c0 * 1 + c1 * x + c2 * x^2 + c3 * x^3 + ... + cm-1 * x^m-1 = y
 ```
-This algorithm contains [my Haskell implementation of generic Gaussian Elimination](https://github.com/elliot-mb/points-to-polynomial/blob/main/GE.hs), which is used to solve for the aforementioned coefficients.
+This algorithm contains my Haskell implementation of [generic Gaussian Elimination](https://github.com/elliot-mb/points-to-polynomial/blob/main/GE.hs), which is used to solve for the aforementioned coefficients.
 ## Example
 ### Script
 <img src="https://user-images.githubusercontent.com/45922387/176879740-e252743e-57af-47a5-b784-0aa186bce3ff.png" alt="picture" width=900 />
