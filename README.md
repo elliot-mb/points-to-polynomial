@@ -1,5 +1,5 @@
 # Polynomial from points
-Haskell script that turns an array of points into the coefficients for the simplest polynomial which crosses those points.\ 
+Haskell script that turns an array of points into the coefficients for the simplest polynomial which crosses those points.\
 When I first discovered this process I couldn't believe how elegant it was, which motivated me to implement it.\
 This is accomplished by entering the points into a Gaussian Elimination matrix that looks like this:
 ```
