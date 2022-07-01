@@ -4,12 +4,15 @@ When I first discovered this process I couldn't believe how elegant it was, whic
 This is accomplished by entering the points into a Gaussian Elimination matrix that looks like this:
 ```
 For any array of m + 1 distinct points with no common x coordinates
-[ 1    x0   x0^2 x0^3 ...  x0^m  y0  ]
-[ 1    x1   x1^2 x1^3 ...  x1^m  y1  ]
-[ ...  ...  ...  ...  ...  ...   ... ]
-[ 1    xm   xm^2 xm^3 ...  xm^m  ym  ]
+[ 1    x0   x0^2 x0^3 ...  x0^m-1  y0  ]
+[ 1    x1   x1^2 x1^3 ...  x1^m-1  y1  ]
+[ ...  ...  ...  ...  ...  ...     ... ]
+[ 1    xm   xm^2 xm^3 ...  xm^m-1  ym  ]
 ```
-...which is then solved for the coefficients of x^0 (1), x^1, x^2, x^3 etc.\
+...which is then solved for the coefficients of ``x^0 (1), x^1, x^2, ...`` To get a polynomial from these coefficients ``c0, c1, c2, ...``, write:
+```
+c0 * 1 + c1 * x + c2 * x^2 + c3 * x^3 + ... + cm-1 * x^m-1 = y
+```
 This algorithm contains my Haskell implementation of generic Gaussian Elimination, which is used to solve for the aforementioned coefficients.
 ## Example
 ### Script
