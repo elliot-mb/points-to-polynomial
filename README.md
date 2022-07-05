@@ -12,7 +12,7 @@ For any array of m + 1 distinct points with no common x coordinates
 ...which is then solved for the coefficients of ``x^0 (1), x^1, x^2, ...`` \
 To get a polynomial from these coefficients (``c0, c1, c2, ...``), write:
 ```
-c0 * 1 + c1 * x + c2 * x^2 + c3 * x^3 + ... + cm-1 * x^m-1 = y
+c0 * 1 + c1 * x + c2 * x^2 + c3 * x^3 + ... + cm * x^m = y
 ```
 This algorithm contains my Haskell implementation of [generic Gaussian Elimination](https://github.com/elliot-mb/points-to-polynomial/blob/main/GE.hs), which is used to solve for the aforementioned coefficients.
 ## Example
