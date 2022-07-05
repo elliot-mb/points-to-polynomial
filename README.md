@@ -4,10 +4,10 @@ This Haskell script turns an array of points into the coefficients for the simpl
 This is accomplished by entering the points into a Gaussian Elimination matrix that looks like this:
 ```
 For any array of m + 1 distinct points with no common x coordinates
-[ 1    x0   x0^2 x0^3 ...  x0^m-1  y0  ]
-[ 1    x1   x1^2 x1^3 ...  x1^m-1  y1  ]
+[ 1    x0   x0^2 x0^3 ...  x0^m    y0  ]
+[ 1    x1   x1^2 x1^3 ...  x1^m    y1  ]
 [ ...  ...  ...  ...  ...  ...     ... ]
-[ 1    xm   xm^2 xm^3 ...  xm^m-1  ym  ]
+[ 1    xm   xm^2 xm^3 ...  xm^m    ym  ]
 ```
 ...which is then solved for the coefficients of ``x^0 (1), x^1, x^2, ...`` \
 To get a polynomial from these coefficients (``c0, c1, c2, ...``), write:
