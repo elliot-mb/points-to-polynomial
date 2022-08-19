@@ -1,6 +1,6 @@
 # Polynomial from points
 When I first discovered this process I couldn't believe how elegant it was, which motivated me to implement it.\
-This Haskell script turns an array of points into the coefficients for the simplest polynomial which crosses those points.\
+This Haskell script turns n distinct points into its **unique** corresponding polynomial of degree n-1 ([casual proof](https://youtu.be/h7apO7q16V0?t=264)).\
 This is accomplished by entering the points into a Gaussian Elimination matrix that looks like this:
 ```
 For any array of m + 1 distinct points with no common x coordinates
